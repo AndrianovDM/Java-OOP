@@ -5,7 +5,7 @@ public class Relative {
     private Human secondHuman;
     private Relation relation;
 
-    public Relative(Human firstHuman, Human secondHuman, Relation relation) {
+    public Relative(Human firstHuman, Relation relation, Human secondHuman) {
         this.firstHuman = firstHuman;
         this.secondHuman = secondHuman;
         this.relation = relation;
