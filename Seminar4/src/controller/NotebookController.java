@@ -8,7 +8,7 @@ import java.util.List;
 public class NotebookController {
     private NotebookService notebookService;
 
-    public void NotebookConrtoller(){
+    public  NotebookController(){
         this.notebookService = new NotebookService();
     }
     

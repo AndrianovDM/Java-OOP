@@ -5,10 +5,10 @@ import Seminar4.src.service.DesktopService;
 
 import java.util.List;
 
-public class DesktopComparator {
+public class DesktopController {
     private DesktopService desktopService;
 
-    public void DesktopConrtoller(){
+    public DesktopController(){
         this.desktopService = new DesktopService();
     }
     
