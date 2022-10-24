@@ -1,4 +1,4 @@
-package Seminar4.src.data;
+package Homework4.src.data;
 
 public abstract class Computer {
     private String id;
