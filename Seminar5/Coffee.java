@@ -1,5 +1,5 @@
 package Seminar5;
 
-public class Cofee {
+public class Coffee {
     
 }
