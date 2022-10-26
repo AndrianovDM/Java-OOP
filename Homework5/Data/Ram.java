@@ -1,18 +1,18 @@
 package Homework5.Data;
 
-public class Ram extends details{
-    Integer memory;
+public class Ram extends Details{
+    String memory;
 
-    public Ram(String name, String procreator, Integer memory) {
+    public Ram(String name, String procreator, String memory) {
         super(name, procreator);
         this.memory = memory;
     }
 
-    public Integer getMemory() {
+    public String getMemory() {
         return memory;
     }
 
-    public void setMemory(Integer memory) {
+    public void setMemory(String memory) {
         this.memory = memory;
     }
 

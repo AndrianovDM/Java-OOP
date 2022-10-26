@@ -1,6 +1,6 @@
 package Homework5.Data;
 
-public class VideoCard extends details{
+public class VideoCard extends Details{
     String retention;
 
     public VideoCard(String name, String procreator, String retention) {
@@ -18,6 +18,6 @@ public class VideoCard extends details{
 
     @Override
     public String toString() {
-        return String.format("VideoCard: {%s, %s, %i}", getName(), getProcreator(), getRetention());
+        return String.format("VideoCard: {%s, %s, %s}", getName(), getProcreator(), getRetention());
     }   
 }

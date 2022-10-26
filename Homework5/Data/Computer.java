@@ -1,12 +1,12 @@
 package Homework5.Data;
 
-public class Pc {
+public class Computer {
     private Mother mother;
-    private processor cpu;
+    private Processor cpu;
     private Ram ram;
     private Ssd ssd; 
     private VideoCard videoCard;
-    public Pc(Mother mother, processor cpu, Ram ram, Ssd ssd, VideoCard videoCard) {
+    public Computer(Mother mother, Processor cpu, Ram ram, Ssd ssd, VideoCard videoCard) {
         this.mother = mother;
         this.cpu = cpu;
         this.ram = ram;
@@ -19,10 +19,10 @@ public class Pc {
     public void setMother(Mother mother) {
         this.mother = mother;
     }
-    public processor getCpu() {
+    public Processor getCpu() {
         return cpu;
     }
-    public void setCpu(processor cpu) {
+    public void setCpu(Processor cpu) {
         this.cpu = cpu;
     }
     public Ram getRam() {

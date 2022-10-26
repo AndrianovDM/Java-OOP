@@ -1,10 +1,10 @@
 package Homework5.Data;
 
-public class details {
+public class Details {
     String name;
     String procreator;
 
-    public details(String name, String procreator) {
+    public Details(String name, String procreator) {
         this.name = name;
         this.procreator = procreator;
     }
