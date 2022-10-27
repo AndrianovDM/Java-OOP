@@ -11,9 +11,9 @@ public class RamService implements Filter<Ram>{
         for (var item : arrList) {
             if (item.getName().equals(filter)) {
                 val = item;
-            } else if (item.getMemory().equals(filter)) {
-                val = item;
             } else if (item.getProcreator().equals(filter)) {
+                val = item;
+            } else if (item.getMemory().equals(filter)) {
                 val = item;
             }
         }

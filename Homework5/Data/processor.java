@@ -1,7 +1,8 @@
 package Homework5.Data;
 
 public class Processor extends Details{
-    String periodicity;
+    
+    private String periodicity;
 
     public Processor(String name, String procreator, String periodicity) {
         super(name, procreator);

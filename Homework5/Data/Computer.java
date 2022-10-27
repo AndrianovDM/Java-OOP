@@ -6,6 +6,7 @@ public class Computer {
     private Ram ram;
     private Ssd ssd; 
     private VideoCard videoCard;
+    
     public Computer(Mother mother, Processor cpu, Ram ram, Ssd ssd, VideoCard videoCard) {
         this.mother = mother;
         this.cpu = cpu;

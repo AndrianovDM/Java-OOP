@@ -1,6 +1,6 @@
 package Homework5.Data;
 
-public class Details {
+public abstract class Details {
     String name;
     String procreator;
 

@@ -3,7 +3,7 @@ import java.util.logging.Logger;
 import java.util.Scanner;
 
 public class Controller {
-    ComputerBuilder cb = new ComputerBuilder();
+    ComputerBuilder compBuild = new ComputerBuilder();
     Database base = new Database();
 
     public void start(){
@@ -11,7 +11,7 @@ public class Controller {
         Scanner iScanner = new Scanner(System.in);
         System.out.println("\nВыберете:\n" +
         "1 - показать запчасти компьютера\n" +
-        "2 - создать сборку компьбтера\n");
+        "2 - создать сборку компьютера\n");
 
         int action = iScanner.nextInt();
         iScanner.nextLine();
@@ -22,28 +22,27 @@ public class Controller {
                 break;
             case 2:
                 System.out.println("\nВыберете материнскую плату:\n");
-                String mb = iScanner.nextLine();
-                cb.setMother(base.m, mb);
+                String ms = iScanner.nextLine();
+                compBuild.setMother(base.mothers, ms);
 
                 System.out.println("\nВыберете процессор:\n");
-                String p = iScanner.nextLine();
-                cb.setProcessor(base.p, p);
+                String ps = iScanner.nextLine();
+                compBuild.setProcessor(base.processors, ps);
 
                 System.out.println("\nВыберете оперативную память:\n");
-                String r = iScanner.nextLine();
-                cb.setRam(base.r, r);
+                String rs = iScanner.nextLine();
+                compBuild.setRam(base.rams, rs);
 
                 System.out.println("\nВыберете SSD диск:\n");
-                String s = iScanner.nextLine();
-                cb.setSsd(base.s, s);
+                String ss = iScanner.nextLine();
+                compBuild.setSsd(base.ssds, ss);
 
                 System.out.println("\nВыберете видеокарту:\n");
-                String v = iScanner.nextLine();
-                cb.setVideoCard(base.v, v);
+                String vs = iScanner.nextLine();
+                compBuild.setVideoCard(base.videoCards, vs);
 
-                logger.info(base.toString());
+                logger.info(compBuild.toString());
                 break;
-
             default:
                 logger.info("Неверные данные!");
                 break;

@@ -1,7 +1,8 @@
 package Homework5.Data;
 
 public class Ram extends Details{
-    String memory;
+    
+    private String memory;
 
     public Ram(String name, String procreator, String memory) {
         super(name, procreator);
@@ -18,7 +19,7 @@ public class Ram extends Details{
 
     @Override
     public String toString() {
-        return String.format("RAM: {%s, %s, %i}", getName(), getProcreator(), getMemory());
+        return String.format("RAM: {%s, %s, %s}", getName(), getProcreator(), getMemory());
     }
     
     

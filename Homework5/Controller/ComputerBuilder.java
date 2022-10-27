@@ -15,6 +15,7 @@ import Homework5.Service.SsdService;
 import Homework5.Service.VideoCardService;
 
 public class ComputerBuilder {
+    
     private Computer pc = new Computer(null, null, null,null,null);
 
     MotherService ms = new MotherService();
@@ -24,14 +25,13 @@ public class ComputerBuilder {
     VideoCardService vs = new VideoCardService();
 
     public ComputerBuilder(){
-
     }
 
-    public void setMother (List<Mother> arrList, String value){
+    public void setMother(List<Mother> arrList, String value){
         pc.setMother(ms.getFilteredDetails(arrList, value));
     }
 
-    public void setProcessor (List<Processor> arrList, String value){
+    public void setProcessor(List<Processor> arrList, String value){
         pc.setCpu(ps.getFilteredDetails(arrList, value));
     }
 
@@ -49,7 +49,7 @@ public class ComputerBuilder {
 
     @Override
     public String toString() {
-        return String.format("Personal computer is: %s, %s, %s, %s, %s", pc.getCpu().toString(), pc.getMother().toString(), 
+        return String.format("Personal computer is: %s, %s, %s, %s, %s", pc.getMother().toString(), pc.getCpu().toString(),
         pc.getRam().toString(), pc.getSsd().toString(), pc.getVideoCard().toString());
     }
 }

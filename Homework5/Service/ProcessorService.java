@@ -11,9 +11,9 @@ public class ProcessorService implements Filter<Processor>{
         for (var item : arrList) {
             if (item.getName().equals(filter)) {
                 val = item;
-            } else if (item.getPeriodicity().equals(filter)) {
-                val = item;
             } else if (item.getProcreator().equals(filter)) {
+                val = item;
+            } else if (item.getPeriodicity().equals(filter)) {
                 val = item;
             }
         }

@@ -1,7 +1,8 @@
 package Homework5.Data;
 
 public class Ssd extends Details{
-    String memory;
+    
+    private String memory;
 
     public Ssd(String name, String procreator, String memory) {
         super(name, procreator);

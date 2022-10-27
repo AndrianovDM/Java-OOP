@@ -11,9 +11,9 @@ public class VideoCardService implements Filter<VideoCard>{
         for (var item : arrList) {
             if (item.getName().equals(filter)) {
                 val = item;
-            } else if (item.getRetention().equals(filter)) {
-                val = item;
             } else if (item.getProcreator().equals(filter)) {
+                val = item;
+            } else if (item.getRetention().equals(filter)) {
                 val = item;
             }
         }

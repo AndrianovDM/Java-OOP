@@ -1,7 +1,8 @@
 package Homework5.Data;
 
 public class VideoCard extends Details{
-    String retention;
+    
+    private String retention;
 
     public VideoCard(String name, String procreator, String retention) {
         super(name, procreator);

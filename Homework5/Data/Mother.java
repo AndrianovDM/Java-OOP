@@ -2,7 +2,7 @@ package Homework5.Data;
 
 public class Mother extends Details{
 
-    String yearСreation;
+    private String yearСreation;
 
     public Mother(String name, String procreator, String yearСreation) {
         super(name, procreator);
