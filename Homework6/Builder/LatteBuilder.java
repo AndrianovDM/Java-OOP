@@ -6,7 +6,7 @@ public class LatteBuilder extends CoffeeBuilder {
 
     void addMilk(Latte latte){
         System.out.println("Греем молоко...");
-        latte.setMilk("МОлоко, 140 мл. ");
+        latte.setMilk("Молоко, 140 мл. ");
         System.out.println("Молоко готово!");
     }
 

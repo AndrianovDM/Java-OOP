@@ -22,11 +22,11 @@ public class Americano extends Coffee{
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append("\nАмерикано: 200 мл. Включает:\n");
+        sb.append("\nАмерикано: 200 мл. Включая:\n");
         sb.append(String.format("Вода: Объем %d мл\nКофе: %d г.",
                 this.volumeWater, this.coffeeGranul)).append("\n");
 
-        if (sugar) sb.append("Сахар.").append("\n");
+        if (sugar) sb.append("Сахар.\nСпасибо за покупку!").append("\n");
 
         return sb.toString();
     }

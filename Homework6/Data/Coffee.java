@@ -30,10 +30,10 @@ public class Coffee {
     @Override
     public String toString() {
         if (sugar)
-            return String.format("\nЭспрессо с сахаром: Объем %d мл. (кофе: %d г.)",
+            return String.format("\nКофе с сахаром: Объем %d мл. (кофе: %d г.)\nСпасибо за покупку!",
                     this.volumeWater, this.coffeeGranul);
         else
-            return String.format("\nЭспрессо: Объем %d мл (кофе: %d г. )",
+            return String.format("\nКофе: Объем %d мл (кофе: %d г. )\nСпасибо за покупку!",
                 this.volumeWater, this.coffeeGranul);
     }
 }

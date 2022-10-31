@@ -13,10 +13,10 @@ public class Espresso extends Coffee{
     @Override
     public String toString() {
         if (this.sugar)
-            return String.format("Эспрессо с сахаром: Объем %d мл (кофе: %d г.)",
+            return String.format("Эспрессо с сахаром: Объем %d мл (кофе: %d г.)\nСпасибо за покупку!",
                     this.volumeWater, this.coffeeGranul);
         else
-            return String.format("Эспрессо: Объем %d мл (кофе: %d g. )",
+            return String.format("Эспрессо: Объем %d мл (кофе: %d g. )\nСпасибо за покупку!",
                     this.volumeWater, this.coffeeGranul);
     }
 

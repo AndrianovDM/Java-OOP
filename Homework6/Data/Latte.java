@@ -29,7 +29,7 @@ public class Latte extends Coffee {
 
         if (sugar) sb.append("Сахар.").append("\n");
 
-        sb.append(milk).append("\n");
+        sb.append(milk).append("\nСпасибо за покупку!");
         return sb.toString();
     }
 
